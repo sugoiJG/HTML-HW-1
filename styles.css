@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "image description"
+    "list video";
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  grid-area: image;
+}
+
+.description-container {
+  grid-area: description;
+}
+
+.list-container {
+  grid-area: list;
+}
+
+.video-container {
+  grid-area: video;
+}
+
+.Mylist {
+  margin-top: 0;
+}
